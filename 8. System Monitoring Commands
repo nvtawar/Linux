@@ -1,0 +1,46 @@
+#print virtual memory stats
+vmstat
+
+#print file system disk space usage, -h for human readable format
+df
+df –h
+
+#estimate disk space usage file & directory wise
+du
+du –a
+
+#display amount of free and used memory in the system
+free
+
+#Prints system related messages including error and warnings
+dmesg
+
+#DMI Table decoder
+dmidecode
+
+#print network connections, routing tables, interfaces, r for route, n for numeric  and v for verbose
+netstat
+netstat -rnv
+
+
+####sysstat
+sysstat needs to be installed.
+i. sudo apt-get update
+ii. sudo apt-get install sysstat
+iii. Configure sysstatOpen conf file /etc/default/sysstat
+sudo nano /etc/default/sysstat
+Change enabled from false to true
+Press CTRL+O, ENTER, CTRL+X
+iv. sysstat starts collecting system statistics every 10 mins by default. If you
+want to change it. Make changes in cronjob for sysstat located in
+/etc/cron.d/sysstat
+sudo nano /etc/cron.d/sysstat
+v. restart the service
+sudo service restart sysstat
+or
+sudo service sysstat restart
+vi. Now use commands in sysstat utility
+vii. sar
+viii. sar –r
+ix. sar –b
+x. iostat

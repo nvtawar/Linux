@@ -1,0 +1,7 @@
+whatis commandname
+
+which command
+
+man commandname
+
+commandname --help

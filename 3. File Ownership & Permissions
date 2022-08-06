@@ -1,0 +1,27 @@
+######FILE/GROUP OWNERSHIP:
+
+#to change the owner of the file
+sudo chown newowner_username filename
+
+eg. touch file1 file2
+sudo chown xyz file1
+
+#to change the owner group of the file
+sudo chgrp newowner_groupname filename
+eg. sudo chgrp bigdata file1
+
+#to change both user and group owner simultaneously
+sudo chown newowneruser:newownergroup filename
+eg. sudo chown bigdata:bigdata file1
+
+######FILE PERMISSIONS:
+sudo chmod u+x filename
+sudo chmod ugo+w filename
+sudo chmod a+x filename
+sudo chmod u+rwx,g+rx,o-w filename
+sudo chmod 674 filename
+sudo chmod 000 filename
+sudo chmod –R 777 filename/dirname
+
+/etc/passwd file has list of all users (system users & human users) created.
+/etc/group has list of all groups

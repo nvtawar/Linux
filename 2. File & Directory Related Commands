@@ -1,0 +1,93 @@
+######FILE & DIRECTORY OPERATIONS
+
+#to find the loction of file or command
+whereis commandname/file
+
+#to find a file location using find command, it earches for the file in file system
+find directory -name 'filename'
+
+#using locate command to find a file, it searches for the file in a pre-built database table
+updatedb
+locate filename
+
+#to create a directory
+mkdir directoryname
+
+#to change working directory
+cd directoryname
+cd                
+cd ..
+cd /
+cd ~
+cd abc
+cd /home/Pallavi
+
+#copy file contents to another file
+cp sourcefile destinationfile
+cp –v sourcefile destinationfile
+
+#move or rename a file
+mv source destn
+
+#multiple files can be moved at once to destination directory
+mv srcfile1 srcfile2 srcfile3 destination
+
+#list the contents of directory
+ls
+ls –l
+ls –ltr
+ls –il
+ls -iltr
+ls -a
+ls -al
+ll
+
+#to remove an empty directory
+rmdir directoryname
+
+#create files and open in editors
+nano filename
+vi filenametouch filename
+
+#create empty file/s
+touch file1 file2 file3
+
+#print the contents of the file in terminal
+cat filename
+cat -n filename
+cat –b filename
+cat -s filename
+
+#create new file and overwrite the contents
+cat>filename
+Type content and press ctrl+d
+
+#Append the contents to a file, creates a file if it does not exist
+cat>> filename, type content and press ctrl+d
+
+#print file contents in reverse order
+tac fielname
+
+#print last 10 lines or specified last n lines
+tail filename
+tail –n nooflines filename
+
+#print first 10 or n lines
+head
+head –n nooflines filename
+
+#print one page at a time
+more filename
+
+#print one line at a time
+less filename
+
+#to check the type of file
+file filename
+
+#to remove non-empty files and directories
+rm directoryname/filename
+rm –f directoryname/filename
+rm –I directoryname/filename
+rm –r directoryname/filename
+rm –rf directoryname/filename

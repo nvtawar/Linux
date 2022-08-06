@@ -1,0 +1,48 @@
+######PROCESS MANAGEMENT:
+
+#report a snapshot of current processes
+ps
+
+#list of processes run by username
+ps –u username
+
+#list every processes, 
+Options:
+f for full format 
+F for extra full format
+L for threads
+
+ps –ef
+ps –eLf
+
+#display a tree of processes
+pstree
+
+#Display an interactive dashboard of all running processes continuously updating
+#We can customize it
+# Press F to add or reove fileds from the listing
+top
+
+#Interactive process viewer
+htop
+
+#making a process running as background using bg command
+eg. sleep 8
+ctrl+z
+jobs
+bg
+fg
+
+#Run process even after exiting
+nohup process &
+nohup process >/dev/null 2>&1 &
+
+#kill process by id
+kill id
+
+#kill a process by name
+pkill processname
+
+#Process priority
+nice
+nice –n 5 processid

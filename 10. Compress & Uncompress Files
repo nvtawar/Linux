@@ -1,0 +1,30 @@
+######LINUX COMMANDS FOR COMPRESSING & UNCOMPRESSING FILES
+
+#to archive multiple files into one tar file
+tar cvf filename.tar sourcefiles/directory
+
+#Options used
+-c for create archive
+-x for extract
+-f for file archive
+-v for verbose
+-z for gzip
+
+#Example 1: to archive /home/pallavi directory to backup.tar for backup
+tar -cvf backup.tar /home/pallavi
+
+#Example 2: to archive current directory to a tar file named backup
+tar -cvf backup.tar .
+
+#To extract the files from .tar archive
+tar -xvf filename.tar
+
+#To list the contents of a tar file without extracting them
+tar –tvf filename.tar
+
+#To compress an archive for reducing size
+gzip file.tar
+
+#To uncompress zipped folders/directories
+gzip –d file.tar.gz
+gunzip file.tar.gz

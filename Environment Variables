@@ -1,0 +1,25 @@
+ENVIRONMENT VARIABLES
+#to print all environment variables
+env
+printenv
+
+#to print value of a particular environment variable
+env $variablename
+
+#to set value for an environment variable
+export var=value
+echo $var
+
+#To set env variables permanently from home directory
+vi .bashrc
+
+#or
+nano .bashrc
+
+TEST=’123’
+export TEST
+
+#To set global environment variables permanently,
+vi /etc/profile or /etc/bashrc
+TEST=’123’
+export TEST

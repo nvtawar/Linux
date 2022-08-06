@@ -1,0 +1,23 @@
+#To check if korn shell is installed or not
+rpm -qa | grep ksh
+
+#to install ksh
+rpm -i ksh*
+
+#to rmeove ksh
+rpm -e ksh
+
+#if you do not have local repo, download using url
+wget http://exacturlofpackage
+
+#nstall downloaded package using 
+rpm -ihv ksh-2012.......rpm
+
+#to query info of a specific package
+rpm -qi packagename.rpm
+
+#list out configuration files related to a package
+rpm -qc specificpackagefullname
+
+#to check which package a command belongs to
+rpm -qf command

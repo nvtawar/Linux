@@ -1,0 +1,12 @@
+SCHEDULING JOBS:
+
+crontab –e
+It opens current user's crontab file.
+
+sudo crontab –e
+It open root user’s crontab file
+
+crontab –u username –e
+It opens crontab file of another user
+
+crontab –l
